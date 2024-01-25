@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Falling Letters</title>
+</head>
+<style>
+    body {
+        background:url(./bg\ image.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+    }
+
+    .name h1 {
+        display: inline-block;
+        position: relative;
+        left: 90vh;
+        top: 40vh;
+        opacity: 0;
+        font-size: 80px;
+        color: lightpink;
+        animation: drop 0.5s forwards;
+    }
+    @keyframes drop {
+        0%{
+            transform: translateY(-20px);
+            opacity: 0;
+        }
+        50%{
+            transform: translateY(-10px);
+            opacity: 1;
+        }
+        100%{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+    .name .m{
+        animation-delay: 0.5s;
+    }
+    .name .o{
+        animation-delay: 1s;
+    }
+    .name .u{
+        animation-delay: 1.5s;
+    }
+    .name .n{
+        animation-delay: 2.0s;
+    }
+    .name .i{
+        animation-delay: 2.5s;
+    }
+    .name .k{
+        animation-delay: 3.0s;
+    }
+    .name .a{
+        animation-delay: 3.5s;
+    }
+    span{
+        position: relative;
+        left:50vh;
+    }
+   
+</style>
+<body>
+    <div class="name">
+    <h1 class="m">M</h1>
+    <h1 class="o">O</h1>
+    <h1 class="u">U</h1>
+    <h1 class="n">N</h1>
+    <h1 class="i">I</h1>
+    <h1 class="k">K</h1>
+    <h1 class="a">A</h1>
+</div>
+<span><img src="./gif.gif"></span>
+</body>
+</html>
